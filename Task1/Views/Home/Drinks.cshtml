@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Task1.Entities.Drink>
+
+<html>
+<head>
+</head>
+<body>
+    <h1>We have @Model.Count() drinks</h1>
+    @foreach (var item in @Model)
+    {
+        <div>
+            <h1>ID:@item.Id</h1>
+            <h1>Name: @item.Name</h1>
+            <h1>IsCarbonated: @item.IsCarbonated</h1>
+            <h1>Price: @item.Price</h1>
+            <h1>Size: @item.Size</h1>
+            <h1>IsSugar: @item.IsSugar</h1>
+            
+        </div>
+    }
+</body>
+
+
+</html>
